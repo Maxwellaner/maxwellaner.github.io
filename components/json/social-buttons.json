@@ -1,0 +1,32 @@
+[
+  {
+    "src": "/assets/linkedinIcon.svg",
+    "alt": "Linkedin/Maxwell",
+    "link": "https://www.linkedin.com/in/maxwell-laner-bb815185/"
+  },
+  {
+    "src": "/assets/instagramIcon.svg",
+    "alt": "Instagram/Maxwell",
+    "link": "https://www.instagram.com/lanermaxwell/"
+  },
+  {
+    "src": "/assets/facebookIcon.svg",
+    "alt": "Facebook/Maxwell",
+    "link": "https://www.facebook.com/maxwell.laner"
+  },
+  {
+    "src": "/assets/youtubeIcon.svg",
+    "alt": "Youtube/Maxwell",
+    "link": "https://www.youtube.com/channel/UCbF-Tsi7Ap2qsNmqs560ioA"
+  },
+  {
+    "src": "/assets/githubIcon.svg",
+    "alt": "Github/Maxwell",
+    "link": "https://github.com/Maxwellaner"
+  },
+  {
+    "src": "/assets/mailIcon.svg",
+    "alt": "Enviar e-mail para Maxwell",
+    "link": "mailto:maxwellaner@gmail.com"
+  }
+]

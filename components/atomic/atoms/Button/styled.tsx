@@ -7,6 +7,7 @@ export const CustomButton = styled.button`
   background-color: #000;
   border: none;
   border-radius: 10px;
+  position: relative;
 
   font-weight: bold;
   transition: all 0.3s;

@@ -1,15 +1,14 @@
 import { Header } from '../../molecules/Header';
 import { Navbar } from '../../molecules/Navbar';
-import { NavList } from '../../molecules/NavList';
 import { Container } from './styled';
 
 export function Info() {
   return (
     <>
+      <Navbar />
       <Container>
         <Header />
       </Container>
-      <Navbar />
     </>
   );
 }

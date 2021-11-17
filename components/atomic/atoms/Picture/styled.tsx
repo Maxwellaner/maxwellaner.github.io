@@ -17,11 +17,17 @@ export const Photo = styled.img.attrs({
   height: 400px;
   top: -12%;
   left: 10%;
+
+  z-index: 10;
 `;
 
 export const CodeIcon = styled.img.attrs({
   src: '/assets/codeIcon.svg',
   alt: 'Imagem de tag HTML'
 })`
+  position: absolute;
   width: 250px;
+
+  left: -50px;
+  top: -20px;
 `;

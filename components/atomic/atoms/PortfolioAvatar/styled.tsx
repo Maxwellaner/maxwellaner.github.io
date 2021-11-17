@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const PortfolioAvatarContainer = styled.div`
   position: relative;
   width: auto;
+
+  .images {
+    transform-style: preserve-3d;
+  }
 `;
 
 interface ImageProps {

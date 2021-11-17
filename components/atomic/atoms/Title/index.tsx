@@ -1,15 +1,16 @@
-import { ReactNode } from 'react';
+import { HTMLAttributes, ReactNode } from 'react';
 import { Text } from './styled';
 
-type TitleProps = {
+type TitleProps = HTMLAttributes<HTMLElement> & {
   children: ReactNode;
   fontSize?: string;
-}
+};
 
-export function Title({ children, fontSize }: TitleProps) {
+export function Title({ children, fontSize, ...props }: TitleProps) {
   return (
     <Text
       fontSize={fontSize || ''}
+      {...props}
     >
       {children}
     </Text>

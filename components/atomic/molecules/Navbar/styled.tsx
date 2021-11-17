@@ -7,14 +7,14 @@ export const NavbarContainer = styled.nav`
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #fff;
+  background-color: #333;
   z-index: 999;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  box-shadow: 15px 12px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 15px 12px 12px rgba(0, 0, 0, 0.3);
 
   .container {
     width: 80vw;
@@ -25,7 +25,11 @@ export const NavbarContainer = styled.nav`
   .technologies {
     display: flex;
 
-    img {
+    a {
+      display: flex;
+    }
+
+    a img {
       width: 40px;
       margin-right: 10px;
     }

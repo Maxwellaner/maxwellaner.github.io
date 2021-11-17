@@ -1,0 +1,20 @@
+[
+  {
+    "hero": "/assets/sns-background.png",
+    "title": "SNS",
+    "text": "O Synergetic Navigation System (SNS) é uma plataforma baseada na web para registrar, visualizar e analisar processos de mudança que é usado em psicoterapia, coaching e desenvolvimento de equipes. A representação e avaliação dos processos permite um feedback cooperativo do processo e um controle do processo baseado em dados.",
+    "site": "https://www.ccsys.de/"
+  },
+  {
+    "hero": "/assets/bridge-system.png",
+    "title": "Bridge Management System",
+    "text": "As ferramentas de gerenciamento de projetos estratégicos oferecem uma visão prospectiva do desenvolvimento geral do portfólio de projetos. Usando padrões aceitáveis ​​baseados em sistema para relatórios e processos de projeto, você cria a base de informações necessária para intervenções e medidas de controle.",
+    "site": "https://www.bridge-mt.com/en/"
+  },
+  {
+    "hero": "/assets/oni-barber.png",
+    "title": "Oni Barber Site",
+    "text": "O ONIBARBER é um sistema de fácil utilização, que dispõe de processos intuitivos que hoje são imprescindiveis na rotina e administração diária de uma barbearia. Com o histórico e dados estatísticos de seus atendimentos, certamente ficará mais fácil planejar e decidir como expandir o seu negócio. Não podemos esquecer do seu cliente, pois ele é a parte mais importante do seu negócio! Com a utilização de um aplicativo exclusivo e personalizado com a sua marca e identidade visual, o seu cliente irá realizar agendamentos de serviços de forma ágil e intuitiva, selecionando o serviço e o profissional desejado. Essa praticidade aumenta a fidelização dos clientes.",
+    "site": "https://onibarber.brainny.cc/"
+  }
+]

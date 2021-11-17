@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const SkillContainer = styled.section`
   width: 100vw;
   max-width: 100%;
-  min-height: 100vh;
-  background-color: #fff;
+  min-height: 80vh;
 
   display: flex;
   flex-direction: column;
@@ -19,11 +18,8 @@ export const SkillContainer = styled.section`
 `;
 
 export const Content = styled.div`
-  width: 70vw;
-  border-radius: 30px;
+  width: 60vw;
   padding: 50px;
-
-  background-color: #F1F5F6;
 
   display: flex;
   justify-content: space-between;

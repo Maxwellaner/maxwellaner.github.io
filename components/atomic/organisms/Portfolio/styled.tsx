@@ -3,30 +3,25 @@ import styled from "styled-components";
 export const PortfolioContainer = styled.section`
   width: 100vw;
   max-width: 100%;
-  min-height: 60vh;
-  border: 1px solid red;
-
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 
-  .grid {
-    border: 1px solid green;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-auto-flow: row;
-    gap: 20px;
-  }
+  .companies {
+    width: 40%;
 
-  @media (max-width: 1300px) {
-    .grid {
-      grid-template-columns: auto auto;
-    }
-  }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-  @media (max-width: 800px) {
-    .grid {
-      grid-template-columns: auto;
+    margin-block: 100px;
+
+    img {
+      width: 200px;
+      cursor: pointer;
+      
     }
   }
 `;

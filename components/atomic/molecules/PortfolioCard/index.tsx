@@ -1,46 +1,34 @@
-import { Description } from "../../atoms/Description";
-import { PortfolioAvatar, PortfolioAvatarProps } from "../../atoms/PortfolioAvatar";
+import { Card } from "./styled";
 import { Title } from "../../atoms/Title";
-import { PortfolioCardContainer } from "./styled";
+import { Button } from "../../atoms/Button";
 
-type PortfolioCardProps = PortfolioAvatarProps & {
-  name: string;
+type PortfolioCardProps = {
+  src: string;
+  alt: string;
   title: string;
-  description: string;
 }
 
-export function PortfolioCard({
-  name,
-  title,
-  description,
-  img1,
-  img2,
-  img3
-}: PortfolioCardProps) {
+export function PortfolioCard({ alt, src, title }: PortfolioCardProps) {
+  function handleClick() {
+
+  }
+
   return (
-    <PortfolioCardContainer
-      onClick={() => {
-        console.log(name);
-      }}
-    >
-      <PortfolioAvatar
-        img1={img1}
-        img2={img2}
-        img3={img3}
-        name={name}
-      />
-      <div className="info">
-        <Title
-          fontSize="18px"
-        >
-          {title}
-        </Title>
-        <Description
-          fontSize="12px"
-        >
-          {description}
-        </Description>
+    <Card>
+      <img src={src} alt={alt} />
+      <Title>{title}</Title>
+      <div className="hidden-content">
+        <div className="separator"></div>
+        <div className="content">
+          <p>
+            SNS é um sistema administrativo para psiquiatras.
+            <br />
+            Ele conta com vários tipos de gráficos que auxiliam no controle dos pacientes,<br />
+            exportação de dados
+          </p>
+        </div>
+        <Button onClick={handleClick}>Detalhes</Button>
       </div>
-    </PortfolioCardContainer>
+    </Card >
   );
 }

@@ -6,4 +6,6 @@ export const UnorderedList = styled.ul`
   justify-content: space-between;
 
   align-self: center;
+
+  list-style: none;
 `;

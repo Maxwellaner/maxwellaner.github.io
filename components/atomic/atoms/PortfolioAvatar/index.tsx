@@ -1,6 +1,7 @@
+import { HTMLAttributes } from "react";
 import { CustomImage, PortfolioAvatarContainer } from "./styled";
 
-export type PortfolioAvatarProps = {
+export type PortfolioAvatarProps = HTMLAttributes<HTMLDivElement> & {
   img1: string;
   img2: string;
   img3: string;
@@ -11,11 +12,12 @@ export function PortfolioAvatar({
   img1,
   img2,
   img3,
-  name
+  name,
+  ...props
 }: PortfolioAvatarProps) {
   return (
     <PortfolioAvatarContainer>
-      <div className="images">
+      <div className="images" {...props}>
         <CustomImage
           src="/assets/avatar.jpeg"
           alt={name}

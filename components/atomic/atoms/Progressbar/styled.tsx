@@ -35,6 +35,8 @@ export const Progress = styled.div<{ percentage: number }>`
     width: 0;
     background-color: #000;
     border-radius: inherit;
+
+    transition: all ease;
   }
 
   .anime-progressbar {

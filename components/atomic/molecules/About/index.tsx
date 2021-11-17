@@ -7,13 +7,13 @@ export function About() {
   }
 
   return (
-    <AboutContainer>
+    <AboutContainer id="aboutme">
       <h1>About me</h1>
       <h4>Front-end Developer</h4>
-      <article>
+      <p>
         Desenvolvedor Full Stack há mais de um ano. Com conhecimentos sólidos <br />
         no ecossistema JavaScript (React, Vue, Node, React Native).
-      </article>
+      </p>
       <div className="buttons">
         <Button onClick={handleDownloadCV}>Download CV</Button>
         <Button onClick={handleDownloadCV}>Another button</Button>
