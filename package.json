@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "login": "npx npm-cli-login -u maxwellaner -p opgm6b3thz -e maxwellaner@gmail.com"
   },
   "dependencies": {
     "classnames": "^2.3.1",
