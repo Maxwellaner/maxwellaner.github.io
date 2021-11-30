@@ -8,4 +8,8 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
   position: relative;
+
+  @media (max-width: 450px) {
+    min-height: 100vh;
+  }
 `;

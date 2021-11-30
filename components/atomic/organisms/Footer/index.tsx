@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <FooterContainer id="footer">
       <div className="footer-content">
-        <div className="footer-part">
+        <div className="footer-part about">
           <h3>Maxwell Laner</h3>
           <p className="footer-about">
             É um Desenvolvedor Full Stack com experiência na criação de websites, sistemas administrativos,
@@ -26,8 +26,8 @@ export function Footer() {
             ))}
           </div>
         </div>
-        <div className="footer-part">
-          <h3>Principais tecnologias</h3>
+        <div className="footer-part tech">
+          <h3 className="technologies-title">Principais tecnologias</h3>
           <div className="technologies">
             <img src="/assets/javascript.svg" alt="JavaScript" />
             <img src="/assets/html.svg" alt="HTML" />

@@ -31,4 +31,8 @@ export const RightNameContainer = styled.div`
 
     margin-top: 25px;
   }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;

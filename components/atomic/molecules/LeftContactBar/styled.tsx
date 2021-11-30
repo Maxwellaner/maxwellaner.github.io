@@ -36,4 +36,8 @@ export const LeftContactBarContainer = styled.div`
     margin: 0px auto;
     background-color: #fff;
   }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;

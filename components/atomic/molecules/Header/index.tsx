@@ -11,11 +11,11 @@ export function Header() {
     <Container>
       <Avatar />
       <div className="header-content">
-        <Title>
+        <Title className="title">
           Olá! <br />
-          me chamo Maxwell Laner
+          Me chamo Maxwell Laner
         </Title>
-        <Description>
+        <Description className="description">
           Sou um Desenvolvedor Front-end
         </Description>
         <div className="icons">

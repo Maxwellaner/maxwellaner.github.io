@@ -34,4 +34,14 @@ export const NavbarContainer = styled.nav`
       margin-right: 10px;
     }
   }
+
+  @media (max-width: 1000px) {
+    .technologies {
+      display: none;
+    }
+  }
+
+  @media (max-width: 450px) {
+    font-size: .7rem;
+  }
 `;

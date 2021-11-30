@@ -66,4 +66,31 @@ export const PortfolioSystemContainer = styled.article<({ direction: string }) >
       width: 100%;
     }
   }
+
+  @media (max-width: 1150px) {
+    width: 70vw;
+  }
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    flex-direction: column;
+
+    margin-bottom: 40px;
+
+    .hero {
+      img {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    width: 90vw;
+    margin-inline: 40px;
+    
+    .text, .hero {
+      width: 100%;
+      
+    }
+  }
 `;

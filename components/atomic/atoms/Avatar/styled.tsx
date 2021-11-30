@@ -9,4 +9,8 @@ export const Image = styled.img.attrs({
   border-radius: 50%;
   border: 5px solid white;
   margin-right: 5%;
+
+  @media (max-width: 450px) {
+    min-width: 220px;
+  }
 `;

@@ -52,4 +52,48 @@ export const FooterContainer = styled.footer`
       }
     }
   }
+
+  @media (max-width: 1100px) {
+    .footer-part.tech {
+      display: none;
+    }
+    
+    .footer-content .footer-part {
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 450px) {
+    padding: 0px;
+    .footer-content {
+      width: 100vw;
+      font-size: .7rem;
+      margin-inline: 20px;
+
+      .footer-part .footer-about {
+        width: 95%;
+      }
+    }
+
+    .footer-part {
+      width: 50vw;
+    }
+
+    .footer-social-buttons {
+      a img {
+        width: 20px;
+      }
+      a + a {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  @media (max-width: 320px) {
+    .footer-social-buttons {
+      a img {
+        width: 16px;
+      }
+    }
+  }
 `;

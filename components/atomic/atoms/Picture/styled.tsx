@@ -7,6 +7,10 @@ export const PictureImage = styled.div`
   border: 5px solid white;
 
   box-shadow: 10px 15px 12px 12px rgba(0, 0, 0, 0.08);
+
+  @media (max-width: 450px) {
+    height: 190px;
+  }
 `;
 
 export const Photo = styled.img.attrs({
@@ -19,6 +23,12 @@ export const Photo = styled.img.attrs({
   left: 10%;
 
   z-index: 10;
+
+  @media (max-width: 450px) {
+    height: 230px;
+    top: -28%;
+    left: 35%;
+  }
 `;
 
 export const CodeIcon = styled.img.attrs({
@@ -30,4 +40,9 @@ export const CodeIcon = styled.img.attrs({
 
   left: -50px;
   top: -20px;
+
+  @media (max-width: 450px) {
+    width: 200px;
+    left: -20px;
+  }
 `;

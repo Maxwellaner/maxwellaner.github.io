@@ -10,18 +10,42 @@ export const PortfolioContainer = styled.section`
   position: relative;
 
   .companies {
-    width: 40%;
+    width: 100%;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     margin-block: 100px;
 
     img {
       width: 200px;
       cursor: pointer;
-      
     }
+
+    img + img {
+      margin-left: 20px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .companies {
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-block: 100px;
+
+      img {
+        width: 80px;
+        cursor: pointer;
+      }
+
+      img + img {
+        margin-left: 20px;
+      }
+  }
   }
 `;

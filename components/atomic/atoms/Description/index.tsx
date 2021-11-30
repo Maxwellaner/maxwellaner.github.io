@@ -1,15 +1,16 @@
-import { ReactNode } from "react";
+import { HTMLAttributes, ReactNode } from "react";
 import { DescriptionText } from "./styled";
 
-type DescriptionProps = {
+type DescriptionProps = HTMLAttributes<HTMLHeadingElement> & {
   children: ReactNode;
   fontSize?: string;
 }
 
-export function Description({ children, fontSize }: DescriptionProps) {
+export function Description({ children, fontSize, ...props }: DescriptionProps) {
   return (
     <DescriptionText
       fontSize={fontSize || ''}
+      {...props}
     >
       {children}
     </DescriptionText>

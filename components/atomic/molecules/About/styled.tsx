@@ -10,4 +10,9 @@ export const AboutContainer = styled.div`
       margin-left: 10px;
     }
   }
+
+  @media (max-width: 450px) {
+    font-size: .8rem;
+    margin-inline: 20px;
+  }
 `;

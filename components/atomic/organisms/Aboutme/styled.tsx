@@ -8,4 +8,12 @@ export const AboutmeContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 1150px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 450px) {
+    height: 100vh;
+  }
 `;

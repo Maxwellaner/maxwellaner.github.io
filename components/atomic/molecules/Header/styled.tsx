@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 50vw;
   display: flex;
   justify-content: center;
   box-shadow: 1rem;
@@ -24,5 +23,36 @@ export const Container = styled.div`
 
     position: absolute;
     bottom: 10%;
+  }
+
+  @media (max-width: 450px) {
+    flex-direction: column;
+    width: 100vw;
+
+    align-items: center;
+
+    .header-content .title, .description {
+      font-size: 1.2rem;
+    }
+
+    .header-content {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icons {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      a img {
+        width: 25px;
+      }
+
+      a + a {
+        margin-left: 10px;
+      }
+    }
   }
 `;

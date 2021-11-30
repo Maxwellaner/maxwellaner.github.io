@@ -15,6 +15,18 @@ export const SkillContainer = styled.section`
     display: flex;
     justify-content: space-between;
   }
+
+  @media (max-width: 1150px) {
+    .tec-skills {
+      flex-direction: column;
+      justify-content: center;
+
+      .skill-info, .skills {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
 `;
 
 export const Content = styled.div`
@@ -26,5 +38,24 @@ export const Content = styled.div`
 
   .skills {
     width: 50%;
+  }
+
+  @media (max-width: 1150px) {
+    width: 70vw;
+  }
+
+  @media (max-width: 450px) {
+    width: 100vw;
+    padding: 0px;
+
+    .tec-skills {
+      width: 100vw;
+      margin-inline: 20px;
+
+      .skill-info, .skills {
+        text-align: left;
+        font-size: .8rem;
+      }
+    }
   }
 `;
