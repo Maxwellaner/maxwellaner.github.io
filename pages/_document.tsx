@@ -23,6 +23,7 @@ class MyDocument extends Document {
             itemProp="thumbnailUrl"
             href="https://maxwellaner.vercel.app/assets/maxwell.png"
           />
+          <meta property='og:image' content='https://maxwellaner.vercel.app/assets/maxwell.png' />
           <meta property="og:image:type" content="image/png" />
           <meta property="fb:app_id" content="XXXXXXXXXXXX" />
           <meta
