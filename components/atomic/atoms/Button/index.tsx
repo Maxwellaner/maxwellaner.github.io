@@ -1,14 +1,13 @@
-import { ReactNode, ButtonHTMLAttributes } from "react";
+import { ReactNode, AnchorHTMLAttributes } from "react";
 import { CustomButton } from "./styled";
 
-type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+type ButtonProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
   children: ReactNode;
-  onClick: () => void;
 }
 
-export function Button({ children, onClick, ...props }: ButtonProps) {
+export function Button({ children, ...props }: ButtonProps) {
   return (
-    <CustomButton onClick={onClick} {...props}>
+    <CustomButton {...props}>
       {children}
     </CustomButton>
   );

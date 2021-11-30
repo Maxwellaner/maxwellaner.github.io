@@ -17,9 +17,24 @@ export function Skill({ animateProgressbar, getAnimationTime }: SkillProps) {
       <Content>
         <div className="tec-skills">
           <div className="skill-info">
-            <h1>Main skills and experiences</h1>
+            <h1>Principais habilidades e experiências</h1>
             <p className="text">
-              Textão sobre habilidades e experiências
+              Conhecimento sólido no ecossistema JavaScript.
+              <br />
+              Trabalho principalmente com React, Next.js, React Native
+              <br />
+              e Backbone.js.
+              <br />
+              <br />
+              Integrações REST e GraphQL.
+              <br />
+              <br />
+              No backend tenho contato direto com Java e Node e banco
+              <br />
+              de dados relacionais como MySQL e PostgreSQL.
+              <br />
+              <br />
+              Também possuo conhecimento em Vue.js e Flutter.
             </p>
           </div>
           <div className="skills">

@@ -10,29 +10,27 @@ import LeftContactBar from "../../molecules/LeftContactBar";
 import RightName from "../../molecules/RightName";
 import ScrollDown from "../../atoms/ScrollDown";
 import { useCallback, useEffect, useState } from "react";
+//import { Debounce } from "../../../../utils/debounce";
+
+import debounce from "lodash.debounce";
+import throttle from "lodash.throttle";
 
 export function MainPage() {
   const [scroll, setScroll] = useState(0);
   const [animateProgressbar, setAnimateProgressbar] = useState('');
   const [isScrolling, setIsScrolling] = useState(false);
 
-  let userAreScrolling: NodeJS.Timeout;
-
   useEffect(() => {
-    window.addEventListener('scroll', (e) => {
-      listenScroll(e);
-      clearTimeout(userAreScrolling);
-      userAreScrolling = setTimeout(() => {
-        setIsScrolling(false);
-      }, 1000)
-    });
+    window.addEventListener('scroll', throttle(listenScroll, 300));
+    window.addEventListener('scroll', debounce(() => setIsScrolling(false), 1000))
 
     return () => {
-      window.removeEventListener('scroll', (e) => listenScroll(e));
+      window.removeEventListener('scroll', throttle(listenScroll, 300));
+      window.removeEventListener('scroll', debounce(() => setIsScrolling(false), 1000));
     }
   }, [])
 
-  function listenScroll(e: Event) {
+  function listenScroll() {
     setIsScrolling(true);
     if (process.browser) {
       const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;

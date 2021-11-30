@@ -12,11 +12,11 @@ export function Header() {
       <Avatar />
       <div className="header-content">
         <Title>
-          Hello! <br />
-          i am Maxwell Laner
+          Olá! <br />
+          me chamo Maxwell Laner
         </Title>
         <Description>
-          I am a Front-end Developer
+          Sou um Desenvolvedor Front-end
         </Description>
         <div className="icons">
           {buttons.map(button => (

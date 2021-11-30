@@ -6,7 +6,7 @@ export const AboutContainer = styled.div`
   .buttons {
     margin-top: 30px;
 
-    button + button {
+    a + a {
       margin-left: 10px;
     }
   }
