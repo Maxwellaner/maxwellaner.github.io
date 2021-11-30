@@ -21,7 +21,7 @@ class MyDocument extends Document {
           />
           <link
             itemProp="thumbnailUrl"
-            href="https://maxwellaner.vercel.app/assets/maxwell.png"
+            href="https://maxwellaner.vercel.app/assets/thumbnail.jpeg"
           />
           <meta property='og:image' content='https://maxwellaner.vercel.app/assets/maxwell.png' />
           <meta property="og:image:type" content="image/png" />
